@@ -30,6 +30,10 @@ const QuoteReducer = (previousState = initialState, action) => {
         newState.error = 1;
         return newState;
       }
+      case QuoteTypes.RESETQUOTE: {
+        newState = initialState;
+        return newState;
+      }
       // Default
       default: {
         return previousState;

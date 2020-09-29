@@ -2,6 +2,7 @@
 import QueryUrl from '../middleware/QueryUrl';
 
 const QuoteTypes = {
+  RESETQUOTE: 'RESET_QUOTE',
   LOADINGQUOTE: 'LOADING_QUOTE',
   SUCCESSQUOTE: 'SUCCESS_QUOTE',
   FAILEDQUOTE: 'FAILED_QUOTE',
@@ -9,6 +10,13 @@ const QuoteTypes = {
 export {QuoteTypes};
 
 const QuoteActions = {
+  resetQuote: () => {
+    return (dispatch) => {
+      return dispatch({
+        type: QuoteTypes.RESETQUOTE,
+      });
+    };
+  },
   getRandomQuote: (token = '') => {
     return QueryUrl(
       'https://api.chucknorris.io/jokes/random',
