@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1601372707522" clover="3.2.0">
+  <project timestamp="1601372707522" name="All files">
+    <metrics statements="20" coveredstatements="20" conditionals="7" coveredconditionals="7" methods="10" coveredmethods="10" elements="37" coveredelements="37" complexity="0" loc="20" ncloc="20" packages="5" files="8" classes="8"/>
+    <package name="components.elements.button">
+      <metrics statements="5" coveredstatements="5" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="Button.js" path="/Users/josdeberdt/Documents/Projects/_NOT-WORK-RELATED/RN-connected-redux/src/components/elements/button/Button.js">
+        <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="17" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="3" type="stmt"/>
+      </file>
+      <file name="Button.style.js" path="/Users/josdeberdt/Documents/Projects/_NOT-WORK-RELATED/RN-connected-redux/src/components/elements/button/Button.style.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.elements.panel">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Panel.js" path="/Users/josdeberdt/Documents/Projects/_NOT-WORK-RELATED/RN-connected-redux/src/components/elements/panel/Panel.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+      </file>
+      <file name="Panel.style.js" path="/Users/josdeberdt/Documents/Projects/_NOT-WORK-RELATED/RN-connected-redux/src/components/elements/panel/Panel.style.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.frames.footer">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Footer.js" path="/Users/josdeberdt/Documents/Projects/_NOT-WORK-RELATED/RN-connected-redux/src/components/frames/footer/Footer.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+      </file>
+      <file name="Footer.style.js" path="/Users/josdeberdt/Documents/Projects/_NOT-WORK-RELATED/RN-connected-redux/src/components/frames/footer/Footer.style.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.frames.home">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="Home.js" path="/Users/josdeberdt/Documents/Projects/_NOT-WORK-RELATED/RN-connected-redux/src/components/frames/home/Home.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="redux.actions">
+      <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="QuoteActions.js" path="/Users/josdeberdt/Documents/Projects/_NOT-WORK-RELATED/RN-connected-redux/src/redux/actions/QuoteActions.js">
+        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
