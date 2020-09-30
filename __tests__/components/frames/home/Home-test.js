@@ -5,6 +5,7 @@ import {render, fireEvent} from '@testing-library/react-native';
 import {Provider} from 'react-redux';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
+import {initialState} from '../../../../src/redux/reducers/QuoteReducer';
 
 import Home from '../../../../src/components/frames/home/Home';
 
@@ -20,7 +21,7 @@ describe('Button element', () => {
    * TESTING STATE CHANGE IN STORE HAPPENS IN THE ACITONS
    */
   beforeEach(() => {
-    store = mockStore({});
+    store = mockStore(initialState);
     store.dispatch = jest.fn();
   });
 
@@ -28,7 +29,7 @@ describe('Button element', () => {
   it('renders & fires get quote event', () => {
     const {getByTestId} = render(
       <Provider store={store}>
-        <Home />
+        <Home quote={initialState.quote} />
       </Provider>,
     );
 
@@ -37,6 +38,10 @@ describe('Button element', () => {
     fireEvent.press(quotebutton);
     /* we expect the dispatch function to have been called 1 time, when the button was pressed */
     expect(store.dispatch).toHaveBeenCalledTimes(1);
+
+    // check doen van de tekst zoals dat hij er nu staat
+    const textcomp = getByTestId('home-text-testid');
+    expect(textcomp.props.children).toBe('Jos is teh best.');
 
     /* pressing the button */
     fireEvent.press(quotebutton);

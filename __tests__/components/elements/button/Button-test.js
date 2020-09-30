@@ -44,14 +44,16 @@ describe('Button element', () => {
       </Provider>,
     );
     const buttontext = queryByTestId('button-text-testid');
-    expect(buttontext.props.children).toBe(testVariable);
+    expect(buttontext.props.children).toBe(testVariable.toUpperCase());
 
     const button = queryByTestId('button-testing');
     fireEvent.press(button);
     expect(fakeFunction).toHaveBeenCalledTimes(1);
+    fireEvent.press(button);
+    expect(fakeFunction).toHaveBeenCalledTimes(2);
   });
 
-  it('renders alternatives & fire press event on disabled button', () => {
+  it('renders alternatives & fire press event on disabled button', async () => {
     // RENDERS WITH testTextID
     render(
       <Provider store={store}>
@@ -73,7 +75,7 @@ describe('Button element', () => {
       </Provider>,
     );
     const button = queryByTestId('button-testing');
-    fireEvent.press(button);
+    await fireEvent.press(button);
     expect(fakeFunction).toHaveBeenCalledTimes(0);
   });
 
